@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rm -i -r ~/.vim
+rm -i ~/.vimrc
+rm -i ~/.zshrc
+
+ln -s ~/git/mydotfiles/vim ~/.vim
+ln -s ~/git/mydotfiles/vimrc ~/.vimrc
+ln -s ~/git/mydotfiles/zshrc ~/.zshrc

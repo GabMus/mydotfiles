@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/git/mydotfiles
+git pull
+cd ~

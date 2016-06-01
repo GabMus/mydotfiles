@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ~/git/mydotfiles
+git add *
+git commit -m "commit"
+git push
+cd ~
