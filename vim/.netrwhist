@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/usr/share/icons'
+let g:netrw_dirhist_2='/home/gabmus/.ssh'
+let g:netrw_dirhist_3='/home/gabmus'
+let g:netrw_dirhist_4='/home/gabmus/Scrivania'
+let g:netrw_dirhist_5='/home/gabmus/git'
+let g:netrw_dirhist_6='/home/gabmus/git/neuzurich'
+let g:netrw_dirhist_7='/home/gabmus/.oh-my-zsh/themes'
