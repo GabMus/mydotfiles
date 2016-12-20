@@ -5,6 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+export TERM="xterm-256color"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -109,3 +110,4 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm rvm)
 PATH=$PATH:/home/gabmus/.bin
 
 alias ip="ip -c"
+alias cdraz="cd /sys/bus/hid/drivers/razerkbd/"
