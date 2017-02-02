@@ -54,7 +54,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -102,12 +102,27 @@ POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 #POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black} `date +%T` \UE12E %f%k%F{white}%f "
-POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black} $ %f%k%F{white}%f "
+POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{blue}%F{black} $ %f%k%F{blue}%f "
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm rvm)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs status nvm rvm)
+
+POWERLEVEL9K_DIR_HOME_BACKGROUND="green"
+POWERLEVEL9K_OS_ICON_BACKGROUND="green"
+POWERLEVEL9K_OS_ICON_FOREGROUND="black"
+POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="red"
+
+export EDITOR=vim
 
 PATH=$PATH:/home/gabmus/.bin
 
 alias ip="ip -c"
-alias cdraz="cd /sys/bus/hid/drivers/razerkbd/"
+alias pacman="pacman --color=always"
+alias pacaur="pacaur --color=always"
+
+alias wifistatus="iw dev wlp5s0 info"
+
+eval $(thefuck --alias)
+alias restartbtdrv="sudo sh -c 'rmmod btusb && modprobe btusb'"
+alias rstnm="sudo systemctl restart NetworkManager"
+export PAGER=most
