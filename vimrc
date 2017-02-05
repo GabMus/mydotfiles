@@ -20,9 +20,9 @@ set incsearch
 set undolevels=1000
 set title
 
-if &t_Co >= 256 || has("gui_running")
-	colorscheme one
-endif
+"if &t_Co >= 256 || has("gui_running")
+"	colorscheme one
+"endif
 
 syntax on
 filetype off
