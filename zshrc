@@ -7,6 +7,7 @@
 # time that oh-my-zsh is loaded.
 export TERM="xterm-256color"
 POWERLEVEL9K_MODE='awesome-fontconfig'
+
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -51,7 +52,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git virtualenv virtualenvwrapper)
 
 # User configuration
 
@@ -104,10 +105,11 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 #POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black} `date +%T` \UE12E %f%k%F{white}%f "
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{blue}%F{black} $ %f%k%F{blue}%f "
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir virtualenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs status nvm rvm)
 
 POWERLEVEL9K_DIR_HOME_BACKGROUND="green"
+POWERLEVEL9K_VIRTUALENV_BACKGROUND="green"
 POWERLEVEL9K_OS_ICON_BACKGROUND="green"
 POWERLEVEL9K_OS_ICON_FOREGROUND="black"
 POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="red"
@@ -119,6 +121,8 @@ PATH=$PATH:/home/gabmus/.bin
 alias ip="ip -c"
 alias pacman="pacman --color=always"
 alias pacaur="pacaur --color=always"
+
+alias grepi="grep -i"
 
 alias wifistatus="iw dev wlp5s0 info"
 
