@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/gabmus/.oh-my-zsh
+export ZSH=/home/gabmus/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -93,6 +93,8 @@ TERM=xterm-256color
 
 # POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+#POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
+#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
 
 POWERLEVEL9K_VCS_GIT_ICON=''
 POWERLEVEL9K_VCS_STAGED_ICON='\u00b1'
@@ -107,7 +109,7 @@ POWERLEVEL9K_CUSTOM_ARCH_FOREGROUND=233
 
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 #POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black} `date +%T` \UE12E %f%k%F{white}%f "
-POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{blue}%F{black} $ %f%k%F{blue}%f "
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{red}%F{white} $ %f%k%F{red}%f "
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_arch context dir virtualenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs status nvm rvm)
