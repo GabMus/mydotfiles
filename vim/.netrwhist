@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/home/gabmus/git/AUR'
 let g:netrw_dirhist_2='/home/gabmus/git/AUR/razer-daemon'
 let g:netrw_dirhist_3='/home/gabmus/git/AUR/razer-driver-dkms'
+let g:netrw_dirhist_4='/home/gabmus/.config/terminix/schemes'
+let g:netrw_dirhist_5='/home/gabmus/.config/terminix'
+let g:netrw_dirhist_6='/home/gabmus/.config'
+let g:netrw_dirhist_7='/home/gabmus/git/Gnome-Global-AppMenu/gnomeGlobalAppMenu@lestcape'
+let g:netrw_dirhist_8='/home/gabmus/.local/share/gnome-shell/extensions/gnomeGlobalAppMenu@lestcape'
+let g:netrw_dirhist_9='/home/gabmus/.cache/pacaur/webkitgtk'

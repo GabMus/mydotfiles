@@ -104,8 +104,8 @@ POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
 POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 
 POWERLEVEL9K_CUSTOM_ARCH="echo '\uf300'"
-POWERLEVEL9K_CUSTOM_ARCH_BACKGROUND=057
-POWERLEVEL9K_CUSTOM_ARCH_FOREGROUND=233
+POWERLEVEL9K_CUSTOM_ARCH_BACKGROUND="cyan"
+POWERLEVEL9K_CUSTOM_ARCH_FOREGROUND="black"
 
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 #POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black} `date +%T` \UE12E %f%k%F{white}%f "
@@ -136,6 +136,7 @@ eval $(thefuck --alias)
 alias restartbtdrv="sudo sh -c 'rmmod btusb && modprobe btusb'"
 alias rstnm="sudo systemctl restart NetworkManager"
 alias whoowns="pacman -Qo"
+alias howbig="du -sh"
 export PAGER=most
 
 export LANG="en_US.UTF-8"
