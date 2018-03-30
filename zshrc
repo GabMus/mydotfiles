@@ -52,17 +52,17 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenv virtualenvwrapper)
+plugins=(git flatpak)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8-1
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -111,7 +111,7 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 #POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black} `date +%T` \UE12E %f%k%F{white}%f "
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{red}%F{white} $ %f%k%F{red}%f "
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_arch context dir virtualenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_arch context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs status nvm rvm)
 
 POWERLEVEL9K_DIR_HOME_BACKGROUND="green"
@@ -120,7 +120,7 @@ POWERLEVEL9K_OS_ICON_BACKGROUND="green"
 POWERLEVEL9K_OS_ICON_FOREGROUND="black"
 POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="red"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 PATH=$PATH:/home/gabmus/.bin
 
@@ -137,6 +137,8 @@ alias restartbtdrv="sudo sh -c 'rmmod btusb && modprobe btusb'"
 alias rstnm="sudo systemctl restart NetworkManager"
 alias whoowns="pacman -Qo"
 alias howbig="du -sh"
+alias vim="nvim"
+
 export PAGER=most
 
 export LANG="en_US.UTF-8"
