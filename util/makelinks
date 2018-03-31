@@ -1,34 +1,34 @@
 #!/bin/bash
 
-rm -i -r ~/.vim
-rm -i -r ~/.config/nvim/init.vim
-rm -i ~/.vimrc
-rm -i ~/.zshrc
+rm -i -r $HOME/.vim
+rm -i -r $HOME/.config/nvim/init.vim
+rm -i $HOME/.vimrc
+rm -i $HOME/.zshrc
 
-ln -s ~/git/mydotfiles/vim ~/.vim
-ln -s ~/git/mydotfiles/vimrc ~/.vimrc
+ln -s $HOME/git/mydotfiles/vim $HOME/.vim
+ln -s $HOME/git/mydotfiles/vimrc $HOME/.vimrc
 
-if [ ! -e "~/.local/share/nvim/site/autoload/plug.vim" ]; then
+if [ -e "$HOME/.local/share/nvim/site/autoload/plug.vim" ]; then
 	echo "Plug for neovim already installed, skipping"
 else
 	echo "Installing Plug for neovim"
-	#curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	#curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
-if [ ! -d "~/.oh-my-zsh" ]; then
+if [ -d "$HOME/.oh-my-zsh" ]; then
 	echo "Oh My Zsh already installed, skipping"
 else
 	echo "Installing Oh My Zsh"
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-if [ ! -d "~/.oh-my-zsh/custom/themes/powerlevel9k" ]; then
+if [ -d "$HOME/.oh-my-zsh/custom/themes/powerlevel9k" ]; then
 	echo "Powerlevel9k already installed, skipping"
 else
 	echo "Installing Powerlevel9k"
-	git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+	git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
 fi
 
-mkdir -p ~/.config/nvim/
-ln -s ~/git/mydotfiles/neovim.init.vim ~/.config/nvim/init.vim
-ln -s ~/git/mydotfiles/zshrc ~/.zshrc
+mkdir -p $HOME/.config/nvim/
+ln -s $HOME/git/mydotfiles/neovim.init.vim $HOME/.config/nvim/init.vim
+ln -s $HOME/git/mydotfiles/zshrc $HOME/.zshrc
