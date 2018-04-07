@@ -22,11 +22,11 @@ else
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-if [ -d "$HOME/.oh-my-zsh/custom/themes/powerlevel9k" ]; then
+if [ -d "$HOME/.oh-my-zsh/themes/powerlevel9k" ]; then
 	echo "Powerlevel9k already installed, skipping"
 else
 	echo "Installing Powerlevel9k"
-	git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
+	git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.oh-my-zsh/themes/powerlevel9k
 fi
 
 if [[ $(lspci | grep -i vga) = *"NVIDIA"* ]]; then
