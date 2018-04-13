@@ -3,7 +3,6 @@
 rm -i -r $HOME/.vim
 rm -i -r $HOME/.config/nvim/init.vim
 rm -i $HOME/.vimrc
-rm -i $HOME/.zshrc
 
 ln -s $HOME/git/mydotfiles/vim $HOME/.vim
 ln -s $HOME/git/mydotfiles/vimrc $HOME/.vimrc
@@ -32,6 +31,7 @@ fi
 if [[ $(lspci | grep -i vga) = *"NVIDIA"* ]]; then
 	echo "Installing NVIDIA profile for mpv"
 	rm -i  $HOME/.config/mpv/mpv.conf
+	mkdir -p  $HOME/.config/mpv/
 	ln -s $HOME/git/mydotfiles/mpv-nvidia.conf $HOME/.config/mpv/mpv.conf
 else
 	echo "No mpv profile for the current GPU, skipping"
@@ -39,4 +39,5 @@ fi
 
 mkdir -p $HOME/.config/nvim/
 ln -s $HOME/git/mydotfiles/neovim.init.vim $HOME/.config/nvim/init.vim
+rm -i $HOME/.zshrc
 ln -s $HOME/git/mydotfiles/zshrc $HOME/.zshrc
