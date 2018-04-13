@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/gabmus/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -122,7 +122,7 @@ POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND="red"
 
 export EDITOR=nvim
 
-PATH=$PATH:/home/gabmus/.bin
+PATH=$PATH:$HOME/.bin
 
 alias ip="ip -c"
 alias pacman="pacman --color=always"
