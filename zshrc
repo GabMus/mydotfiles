@@ -6,7 +6,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 export TERM="xterm-256color"
-POWERLEVEL9K_MODE='awesome-fontconfig'
+#POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -103,16 +104,16 @@ POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
 POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
 POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 
-POWERLEVEL9K_CUSTOM_ARCH="echo '\uf300'"
+POWERLEVEL9K_CUSTOM_ARCH="echo '\uf303'"
 POWERLEVEL9K_CUSTOM_ARCH_BACKGROUND="cyan"
 POWERLEVEL9K_CUSTOM_ARCH_FOREGROUND="black"
 
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="\n"
 #POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%K{white}%F{black} `date +%T` \UE12E %f%k%F{white}%f "
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{red}%F{white} $ %f%k%F{red}%f "
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{blue} \$ %F{blue}%k\ue0b0%f "
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_arch context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(background_jobs status nvm rvm)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_arch context dir vcs background_jobs status nvm rvm)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 POWERLEVEL9K_DIR_HOME_BACKGROUND="green"
 POWERLEVEL9K_VIRTUALENV_BACKGROUND="green"
