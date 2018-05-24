@@ -37,6 +37,7 @@ set number
 
 " Automatically open NERDTree
 autocmd vimenter * NERDTree
+autocmd vimenter * wincmd p
 " Close NERDTree if it's the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
